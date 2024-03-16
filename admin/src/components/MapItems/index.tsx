@@ -1,4 +1,5 @@
 import type { FeatureCollection, Feature } from "geojson";
+// @ts-ignore
 import { Box, Typography } from "@strapi/design-system";
 import SortableItem from "../SortableItem";
 import {
@@ -13,12 +14,12 @@ import { ColorResult, FileType } from "../../../../types";
 
 type MapItemsProps = {
   setList:
-  | ((
-    newState: ItemInterface[],
-    sortable: Sortable | null,
-    store: Store
-  ) => void)
-  | undefined;
+    | ((
+        newState: ItemInterface[],
+        sortable: Sortable | null,
+        store: Store
+      ) => void)
+    | undefined;
   geojson: FeatureCollection;
   handleWeightChange: (weight: number, feature: Feature) => void;
   handleFeatureRemove: (feature: Feature) => void;
@@ -54,7 +55,7 @@ const MapItems = ({
           flexDirection: "column",
           gap: "8px",
           maxHeight: "500px",
-          overflowX: 'hidden',
+          overflowX: "hidden",
           overflowY: "auto",
           height: "100%",
         }}

@@ -5,7 +5,7 @@ const accessActions = [
     section: "plugins",
     displayName: "View / Edit Configuration",
     uid: "config",
-    pluginName: "leaflet-maps",
+    pluginName: "strapi-leaflet-geoman",
   },
 ];
 

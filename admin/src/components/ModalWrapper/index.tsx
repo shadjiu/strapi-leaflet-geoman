@@ -7,6 +7,7 @@ import {
   ModalBody,
   ModalFooter,
   Flex,
+  // @ts-ignore
 } from "@strapi/design-system";
 import { Expand, Collapse } from "@strapi/icons";
 

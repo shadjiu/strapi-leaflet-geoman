@@ -1,11 +1,14 @@
 import { Strapi } from "@strapi/strapi";
 import { sanitizeConfigInput } from "../content-types/config";
-import { Config } from "../../types";
+import { Config } from "../../../types";
+import * as pckg from "../../../package.json";
+
+const name = pckg.strapi.name;
 
 export default ({ strapi }: { strapi: Strapi }) => ({
   async index(ctx: any) {
     const config: Config = await strapi
-      .plugin("leaflet-maps")
+      .plugin(name)
       .service("config")
       .retrieve();
 
@@ -18,7 +21,7 @@ export default ({ strapi }: { strapi: Strapi }) => ({
     const data: Config = await sanitizeConfigInput(ctx.request.body, ctx);
 
     const config: Config = await strapi
-      .plugin("leaflet-maps")
+      .plugin(name)
       .service("config")
       .update(data);
 

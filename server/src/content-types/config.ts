@@ -1,5 +1,5 @@
 import * as utils from "@strapi/utils";
-import { Config } from "../../types";
+import { Config } from "../../../types";
 import { Model } from "@strapi/utils/dist/types";
 
 const { sanitize } = utils;
@@ -10,11 +10,11 @@ const schema: Model = {
   kind: "singleType",
   modelType: "contentType",
   // @ts-ignore
-  collectionName: "leaflet_maps_configs",
+  collectionName: "strapi_leaflet_geoman_config",
   info: {
     singularName: "config",
     pluralName: "configs",
-    displayName: "Leaflet Maps Config",
+    displayName: "Strapi Leaflet Geoman Config",
   },
   options: {
     populateCreatorFields: false,

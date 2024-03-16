@@ -3,13 +3,13 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import type { FeatureCollection, Feature } from "geojson";
 import GeomanWrapper, { ForwRefHandle } from "../GeomanWrapper";
 import { useIntl } from "react-intl";
-import { Box, Typography } from "@strapi/design-system";
+// @ts-ignore
+import { Box, Typography, Loader } from "@strapi/design-system";
 import { ItemInterface } from "react-sortablejs";
 import { ColorResult, FileType } from "../../../../types";
 import _, { isEqual } from "lodash";
 import MapItems from "../MapItems";
 import useConfig from "../../hooks/useConfig";
-import { Loader } from "@strapi/icons";
 import isValidConfig from "../../utils/validate-config";
 import ModalWrapper from "../ModalWrapper";
 

@@ -1,52 +1,77 @@
 {
   "name": "strapi-leaflet-geoman",
-  "version": "0.1.2",
-  "description": "This is the description of the plugin.",
+  "version": "0.1.27",
+  "description": "Strapi maintaned Custom Fields",
   "strapi": {
     "name": "strapi-leaflet-geoman",
+    "displayName": "Strapi Leaflet Geoman",
     "description": "The Leaflet GeoJSON Generator plugin seamlessly integrates with Leaflet, allowing users to draw and customize various geometry figures, creating a GeoJSON collection for effortless spatial data representation.",
     "kind": "plugin"
   },
+  "author": {
+    "name": "Hadjiu Sorin",
+    "email": "hadjiu.sorin@gmail.com",
+    "url": "https://github.com/shadjiu"
+  },
+  "exports": {
+    "./strapi-admin": {
+      "types": "./dist/admin/index.d.ts",
+      "source": "./admin/src/index.ts",
+      "import": "./dist/admin/index.mjs",
+      "require": "./dist/admin/index.js",
+      "default": "./dist/admin/index.js"
+    },
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "./dist",
+    "strapi-server.js"
+  ],
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.16.0",
-    "@strapi/design-system": "^1.6.3",
-    "@strapi/helper-plugin": "^4.6.0",
-    "@strapi/icons": "^1.6.3",
-    "@uiw/react-color-chrome": "^2.0.8",
+    "@strapi/design-system": "^1.16.0",
+    "@strapi/helper-plugin": "^4.20.5",
+    "@strapi/icons": "^1.16.0",
+    "@strapi/strapi": "^4.20.5",
+    "@uiw/react-color-chrome": "^2.1.1",
     "geojson-validation": "^1.0.2",
     "leaflet": "^1.9.4",
-    "prop-types": "^15.7.2",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "prop-types": "^15.8.1",
     "rc-slider": "^10.5.0",
     "react-error-boundary": "^4.0.13",
     "react-leaflet": "^4.2.1",
     "react-leaflet-geoman-v2": "^1.0.1",
     "react-sortablejs": "^6.1.4",
-    "sortablejs": "^1.15.2",
-    "leaflet-defaulticon-compatibility": "^0.1.2"
+    "sortablejs": "^1.15.2"
   },
   "devDependencies": {
-    "@strapi/typescript-utils": "^4.6.0",
+    "@strapi/typescript-utils": "^4.20.5",
     "@types/geojson-validation": "^1.0.3",
     "@types/leaflet": "^1.9.8",
-    "@types/react": "^17.0.53",
-    "@types/react-dom": "^18.0.28",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
     "@types/react-router-dom": "^5.3.3",
     "@types/sortablejs": "^1.15.8",
-    "@types/styled-components": "^5.1.26",
+    "@types/styled-components": "^5.1.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
-    "styled-components": "^5.3.6",
-    "typescript": "5.0.4"
+    "styled-components": "^5.3.11",
+    "typescript": "5.4.2"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.2.1"
-  },
-  "author": {
-    "name": "A Strapi developer"
   },
   "maintainers": [
     {
@@ -57,9 +82,12 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
+  "resolutions": {
+    "@types/react": "^17.0.0 || ^18.0.0"
+  },
   "scripts": {
-    "develop": "tsc -p tsconfig.server.json -w",
-    "build": "tsc -p tsconfig.server.json"
+    "build": "strapi plugin:build --force",
+    "clean": "run -T rimraf ./dist"
   },
   "license": "MIT",
   "packageManager": "yarn@4.1.1"

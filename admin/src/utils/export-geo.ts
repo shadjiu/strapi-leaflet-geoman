@@ -4,7 +4,9 @@ const exportGeoJSON = (data: JSON, name?: string) => {
   )}`;
   const link = document.createElement("a");
   link.href = jsonString;
-  link.download = name ? `${name}.json` : "@sh/geojson.json";
+  link.download = name
+    ? `${name}.json`
+    : `geojson-${new Date().getMilliseconds()}.json`;
 
   link.click();
 };

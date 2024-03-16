@@ -9,6 +9,7 @@ import {
   TextInput,
   Box,
   Button,
+  // @ts-ignore
 } from "@strapi/design-system";
 import { Check } from "@strapi/icons";
 import useConfig from "../../hooks/useConfig";

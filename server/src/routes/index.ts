@@ -1,3 +1,5 @@
+import * as pckg from "../../../package.json";
+
 export default [
   {
     method: "GET",
@@ -17,7 +19,7 @@ export default [
         {
           name: "admin::hasPermissions",
           config: {
-            actions: ["plugin::leaflet-maps.config"],
+            actions: [`plugin::${pckg.strapi.name}.config`],
           },
         },
       ],

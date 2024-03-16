@@ -9,15 +9,15 @@ import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 import "leaflet/dist/leaflet.css";
 // import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.webpack.css";
 import "leaflet-defaulticon-compatibility";
-import "./assets/styles.css";
+import generateStyles from "./utils/generate-styles";
 
-const name = pluginPkg.strapi.name;
+const name = pluginPkg.strapi.displayName;
 
 export default {
   register(app: any) {
     app.createSettingSection(
       {
-        id: pluginId,
+        id: `${pluginId}-label`,
         intlLabel: {
           id: getTrad("settings.section-label"),
           defaultMessage: name,
@@ -30,7 +30,7 @@ export default {
             id: getTrad("settings.link-label"),
             defaultMessage: "Configuration",
           },
-          id: pluginId,
+          id: `${pluginId}-link-label`,
           to: `/settings/${pluginId}`,
           Component: async () => {
             const component = await import(
@@ -48,8 +48,8 @@ export default {
 
     app.customFields.register({
       name: "geojson",
-      pluginId, // the custom field is created by a color-picker plugin
-      type: "json", // the color will be stored as a string
+      pluginId, // the custom field is created by plugin
+      type: "json", // the color will be stored as a json
       intlLabel: {
         id: getTrad("input.label"),
         defaultMessage: name,
@@ -59,11 +59,14 @@ export default {
         defaultMessage: "Draw/pick your location",
       },
       icon: PluginIcon, // don't forget to create/import your icon component
+      // components: {
+      //   Input: async () =>
+      //     import(
+      //       /* webpackChunkName: "input-component" */ "./components/Input"
+      //     ),
+      // },
       components: {
-        Input: async () =>
-          import(
-            /* webpackChunkName: "input-component" */ "./components/Input"
-          ),
+        Input: async () => import("./components/Input"),
       },
       options: {
         advanced: [
@@ -150,7 +153,9 @@ export default {
     app.registerPlugin(plugin);
   },
 
-  bootstrap(app: any) {},
+  bootstrap(app: any) {
+    generateStyles();
+  },
 
   async registerTrads(app: any) {
     const { locales } = app;

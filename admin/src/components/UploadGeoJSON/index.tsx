@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
+// @ts-ignore
 import { Button } from "@strapi/design-system";
-import UploadIcon from "@strapi/icons/Upload";
+import { Upload as UploadIcon } from "@strapi/icons";
 import validateGeoJSON from "../../utils/validate-geo";
 import { FileType } from "../../../../types";
 
@@ -21,7 +22,6 @@ const UploadGeoJSON = ({
       fileReader.onload = (event) => {
         if (event.target?.result) {
           const geoJson = validateGeoJSON(event.target.result.toString());
-          console.log(geoJson);
           if (geoJson) {
             setFiles({ name, geoJSON: geoJson });
             onUpload?.({ name, geoJSON: geoJson });

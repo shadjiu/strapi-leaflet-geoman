@@ -4,7 +4,6 @@
  *
  */
 
-import React from "react";
 import pluginId from "../../pluginId";
 import { CheckPagePermissions } from "@strapi/helper-plugin";
 import Settings from "../../components/Settings";

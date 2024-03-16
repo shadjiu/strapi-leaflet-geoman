@@ -7,11 +7,14 @@ import {
   Flex,
   IconButton,
   Typography,
+  // @ts-ignore
 } from "@strapi/design-system";
 import { ColorResult } from "../../../../types";
-import DragIcon from "@strapi/icons/Drag";
-import DeleteIcon from "@strapi/icons/Trash";
-import ListIcon from "@strapi/icons/List";
+import {
+  Trash as DeleteIcon,
+  Drag as DragIcon,
+  List as ListIcon,
+} from "@strapi/icons";
 import StripeSlider from "../Slider";
 
 const SortableItem = ({

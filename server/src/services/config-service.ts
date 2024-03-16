@@ -1,7 +1,8 @@
 import { Strapi } from "@strapi/strapi";
-import { Config } from "../../types";
+import { Config } from "../../../types";
+import * as pckg from "../../../package.json";
 
-const uid = "plugin::leaflet-maps.config";
+const uid = `plugin::${pckg.strapi.name}.config`;
 const fields = [
   "defaultLatitude",
   "defaultLongitude",
