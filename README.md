@@ -19,7 +19,7 @@ The API response of a Strapi content-type implementing this leaflet-geoman custo
     {
       "type": "Feature",
       "geometry": {
-        "type": "Point" | "Polygon" | "MultiLineString" | "LineString",
+        "type": "Point | Polygon | MultiLineString | LineString",
           "coordinates": [-104.99404, 39.75621]
       },
       "properties": {
