@@ -1,7 +1,8 @@
 {
   "name": "strapi-leaflet-geoman",
-  "version": "0.1.30",
+  "version": "0.1.31",
   "description": "Strapi maintaned Custom Fields",
+  "repository": "https://github.com/shadjiu/strapi-leaflet-geoman",
   "license": "MIT",
   "author": {
     "name": "Hadjiu Sorin",
