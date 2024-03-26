@@ -62,8 +62,8 @@ export default function Settings() {
                 Save
               </Button>
             }
-            title="Leaflet Maps Configuration"
-            subtitle="Configure your Leaflet Maps settings"
+            title="Strapi Leaflet Geoman Configuration"
+            subtitle="Configure your Strapi Leaflet Geoman settings"
           />
 
           <ContentLayout>

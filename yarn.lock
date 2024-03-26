@@ -6114,9 +6114,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.707
-  resolution: "electron-to-chromium@npm:1.4.707"
-  checksum: 10c0/937fc29330fd02762b74d7158fb8699da396831ade58772906f35ad183fca8faa9e94711295a7432e7eed3508765f21a938f64a9316127613a36a0ca0cde001b
+  version: 1.4.708
+  resolution: "electron-to-chromium@npm:1.4.708"
+  checksum: 10c0/0232dd6f96bfeb8c2ffe69ab7698e8566be731b467eb4778a74da3070274f4521590d7638248177b2f70e1e8c629b255df80991594127d56069c355850d821dd
   languageName: node
   linkType: hard
 
@@ -11212,17 +11212,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-error-boundary@npm:^4.0.13":
-  version: 4.0.13
-  resolution: "react-error-boundary@npm:4.0.13"
-  dependencies:
-    "@babel/runtime": "npm:^7.12.5"
-  peerDependencies:
-    react: ">=16.13.1"
-  checksum: 10c0/6f3e0e4d7669f680ccf49c08c9571519c6e31f04dcfc30a765a7136c7e6fbbbe93423dd5a9fce12107f8166e54133e9dd5c2079a00c7a38201ac811f7a28b8e7
-  languageName: node
-  linkType: hard
-
 "react-fast-compare@npm:^2.0.1":
   version: 2.0.4
   resolution: "react-fast-compare@npm:2.0.4"
@@ -12755,7 +12744,6 @@ __metadata:
     rc-slider: "npm:^10.5.0"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
-    react-error-boundary: "npm:^4.0.13"
     react-leaflet: "npm:^4.2.1"
     react-leaflet-geoman-v2: "npm:^1.0.1"
     react-router-dom: "npm:^5.3.4"
@@ -12764,6 +12752,7 @@ __metadata:
     styled-components: "npm:^5.3.11"
     typescript: "npm:5.4.2"
   peerDependencies:
+    "@strapi/strapi": ^4.0.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^5.2.0

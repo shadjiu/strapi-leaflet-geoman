@@ -57,7 +57,7 @@ const MapItems = ({
           maxHeight: "500px",
           overflowX: "hidden",
           overflowY: "auto",
-          height: "100%",
+          height: "auto",
         }}
         list={geojson.features as ItemInterface[]}
         setList={setList}
