@@ -52,7 +52,7 @@ Now you can use Strapi Leaflet Geoman as a custom field.
 
 ## 🔧 Installation
 
-You just need to install the `strapi-google-maps` package via npm, at the root of your strapi project.
+You just need to install the `strapi-leaflet-geoman` package via npm, at the root of your strapi project.
 
 ```bash
 npm i strapi-leaflet-geoman
