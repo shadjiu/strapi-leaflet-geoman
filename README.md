@@ -1,6 +1,10 @@
 # Strapi-Leaflet-Geoman
 
-![Preview](https://github.com/shadjiu/strapi-leaflet-geoman/blob/main/pictures/logo.svg?raw=true)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/shadjiu/strapi-leaflet-geoman/main/pictures/logo.svg" alt="Meilisearch-Strapi" width="300" height="300" />
+</p>
+
 
 A Strapi plugin allowing you to implement a Leaflet-Geoman custom field into your content-types, which can be used to pick and retrieve locations.
 
