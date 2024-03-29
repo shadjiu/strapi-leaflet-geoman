@@ -1,7 +1,18 @@
 {
   "name": "strapi-leaflet-geoman",
-  "version": "0.1.31",
+  "version": "0.1.32",
   "description": "Strapi maintaned Custom Fields",
+  "keywords": [
+    "strapi",
+    "strapi-plugin",
+    "strapi-plugin-leaflet-geoman",
+    "leaflet-geoman",
+    "strapi-leaflet-geoman",
+    "strapi-custom-field",
+    "leaflet",
+    "geoman",
+    "strapi-maps"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/shadjiu/strapi-leaflet-geoman.git"
@@ -36,11 +47,13 @@
   },
   "files": [
     "./dist",
-    "strapi-server.js"
+    "strapi-server.js",
+    "strapi-admin.js"
   ],
   "scripts": {
     "build": "strapi plugin:build --force",
-    "clean": "run -T rimraf ./dist"
+    "clean": "run -T rimraf ./dist",
+    "watch": "strapi plugin:watch"
   },
   "resolutions": {
     "@types/react": "^17.0.0 || ^18.0.0"

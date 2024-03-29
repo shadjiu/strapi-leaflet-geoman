@@ -1,10 +1,8 @@
 # Strapi-Leaflet-Geoman
 
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/shadjiu/strapi-leaflet-geoman/main/pictures/logo.svg" alt="Meilisearch-Strapi" width="300" height="300" />
 </p>
-
 
 A Strapi plugin allowing you to implement a Leaflet-Geoman custom field into your content-types, which can be used to pick and retrieve locations.
 
@@ -48,15 +46,25 @@ Now you can use Strapi Leaflet Geoman as a custom field.
 ## ❗ Requirements
 
 - Strapi v4
-- To customize leaflet tiles, visit and choose one fom [Leaflet Providers](https://leaflet-extras.github.io/leaflet-providers/preview/).
+- To customize leaflet tiles, visit and choose one from [Leaflet Providers](https://leaflet-extras.github.io/leaflet-providers/preview/).
 
 ## 🔧 Installation
 
 You just need to install the `strapi-leaflet-geoman` package via npm, at the root of your strapi project.
 
+**npm:**
+
 ```bash
 npm i strapi-leaflet-geoman
 ```
+
+
+**yarn:**
+
+```bash
+yarn add strapi-leaflet-geoman
+```
+
 
 **To make Strapi Leaflet Geoman work, you should take a look at the next section.**
 

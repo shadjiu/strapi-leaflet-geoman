@@ -16,7 +16,7 @@ const ExportGeoJSON = ({ data, name }: { data: JSON; name: string }) => {
         onClick={handleClick}
         startIcon={<ExportIcon />}
       >
-        Export {name}.json
+        Export file
       </Button>
     </>
   );

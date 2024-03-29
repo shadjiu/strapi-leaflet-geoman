@@ -72,8 +72,8 @@ const SortableItem = ({
       )}
 
       <Typography style={{ margin: "0 4px", fontSize: "12px" }}>
-        {feature.geometry.type}{" "}
-        {((feature.geometry as any).coordinates || []).length} points
+        {feature.geometry.type}
+        {/* {((feature.geometry as any).coordinates || []).length} points */}
       </Typography>
       <IconButton
         noBorder

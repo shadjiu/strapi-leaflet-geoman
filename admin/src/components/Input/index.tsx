@@ -195,7 +195,7 @@ const Input = (props: any) => {
       {!!config && (
         <ModalWrapper>
           <Box style={{ display: "flex", height: "90vh" }}>
-            <Box style={{ width: "calc(100% - 320px)" }}>
+            <Box style={{ width: "calc(100% - 240px)" }}>
               <MapContainer zoom={mapProps.zoom} center={mapProps.center}>
                 <TileLayer
                   attribution={mapProps.tileAttribution}

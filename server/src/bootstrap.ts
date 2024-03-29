@@ -11,9 +11,9 @@ const accessActions = [
 
 export default async ({ strapi }: { strapi: Strapi }) => {
   // bootstrap phase
-  if (strapi.admin) {
-    await strapi.admin.services.permission.actionProvider.registerMany(
-      accessActions
-    );
-  }
+  // if (strapi.admin) {
+  await strapi.admin.services.permission.actionProvider.registerMany(
+    accessActions
+  );
+  // }
 };

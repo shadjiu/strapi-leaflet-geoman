@@ -135,7 +135,7 @@ const Geoman: React.ForwardRefRenderFunction<ForwRefHandle, Props> = (
       <GeomanControls
         options={{
           position: "topleft",
-          drawText: true,
+          drawText: false,
           customControls: true,
         }}
         globalOptions={{

@@ -38,7 +38,7 @@ const MapItems = ({
   return (
     <Box
       style={{
-        width: "320px",
+        width: "240px",
         overflow: "auto",
         padding: "0 20px",
         position: "relative",

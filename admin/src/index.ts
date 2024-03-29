@@ -15,6 +15,7 @@ const name = pluginPkg.strapi.displayName;
 
 export default {
   register(app: any) {
+    console.log(app);
     app.createSettingSection(
       {
         id: `${pluginId}-label`,
@@ -146,7 +147,7 @@ export default {
     const plugin = {
       id: pluginId,
       initializer: Initializer,
-      isReady: false,
+      isReady: true,
       name,
     };
 
