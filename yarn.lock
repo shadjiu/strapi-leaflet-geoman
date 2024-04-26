@@ -2615,13 +2615,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/icons@npm:1.16.0, @strapi/icons@npm:^1.16.0":
+"@strapi/icons@npm:1.16.0":
   version: 1.16.0
   resolution: "@strapi/icons@npm:1.16.0"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
   checksum: 4fed68a6d0c2440fe2b44699bcbc8203e7093261f16a76e33d4111869655e8a574eb0e11d3e441149e4f0c4421dad6bb88be19a1308a39b821ce3c9e4740fdee
+  languageName: node
+  linkType: hard
+
+"@strapi/icons@npm:^1.17.0":
+  version: 1.18.0
+  resolution: "@strapi/icons@npm:1.18.0"
+  peerDependencies:
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+  checksum: 8/059e244989cfb8f65d5de8ce225589295a5c04b013041098dbe5de8fa251742649e7a1236639d0c888ba5251cc0fbc1f0ebd7f4d112c5c893acb232baf01fe39
   languageName: node
   linkType: hard
 
@@ -12883,7 +12893,7 @@ __metadata:
     "@geoman-io/leaflet-geoman-free": ^2.16.0
     "@strapi/design-system": ^1.17.0
     "@strapi/helper-plugin": ^4.21.0
-    "@strapi/icons": ^1.16.0
+    "@strapi/icons": ^1.17.0
     "@strapi/strapi": ^4.20.5
     "@strapi/typescript-utils": ^4.20.5
     "@types/geojson-validation": ^1.0.3
