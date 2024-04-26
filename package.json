@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@geoman-io/leaflet-geoman-free": "^2.16.0",
-    "@strapi/design-system": "^1.16.0",
+    "@strapi/design-system": "^1.17.0",
     "@strapi/helper-plugin": "^4.21.0",
     "@strapi/icons": "^1.16.0",
     "@uiw/react-color-chrome": "^2.1.1",
