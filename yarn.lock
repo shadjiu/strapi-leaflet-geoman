@@ -2590,9 +2590,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/helper-plugin@npm:^4.21.0":
-  version: 4.23.0
-  resolution: "@strapi/helper-plugin@npm:4.23.0"
+"@strapi/helper-plugin@npm:^4.23.1":
+  version: 4.24.2
+  resolution: "@strapi/helper-plugin@npm:4.24.2"
   dependencies:
     axios: 1.6.0
     date-fns: 2.30.0
@@ -2605,13 +2605,13 @@ __metadata:
     react-query: 3.39.3
     react-select: 5.7.0
   peerDependencies:
-    "@strapi/design-system": 1.16.0
-    "@strapi/icons": 1.16.0
+    "@strapi/design-system": 1.18.0
+    "@strapi/icons": 1.18.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^5.2.0
     styled-components: ^5.2.1
-  checksum: 8/b4e52bc9aa00770b3b3115ff21ac659df39577843f8b1271972ea44156db6361b70c6dd91da063ce288f6e1912079312aed66c77a8d1d216e120d85356e16ff0
+  checksum: 8/9db632a7a16fba05cb758ea63173302f3a52b1459fa114aeed57f482ca46cafa44868aedf4dde1c047d8e051bb23a80764911ec7ee53f7a3888b670c45546c97
   languageName: node
   linkType: hard
 
@@ -12892,7 +12892,7 @@ __metadata:
   dependencies:
     "@geoman-io/leaflet-geoman-free": ^2.16.0
     "@strapi/design-system": ^1.17.0
-    "@strapi/helper-plugin": ^4.21.0
+    "@strapi/helper-plugin": ^4.23.1
     "@strapi/icons": ^1.17.0
     "@strapi/strapi": ^4.20.5
     "@strapi/typescript-utils": ^4.20.5
