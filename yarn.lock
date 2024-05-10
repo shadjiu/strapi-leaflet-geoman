@@ -11262,30 +11262,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rc-slider@npm:^10.5.0":
-  version: 10.5.0
-  resolution: "rc-slider@npm:10.5.0"
+"rc-slider@npm:^10.6.1":
+  version: 10.6.2
+  resolution: "rc-slider@npm:10.6.2"
   dependencies:
-    "@babel/runtime": "npm:^7.10.1"
-    classnames: "npm:^2.2.5"
-    rc-util: "npm:^5.27.0"
+    "@babel/runtime": ^7.10.1
+    classnames: ^2.2.5
+    rc-util: ^5.36.0
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: f9d6d4afc7cc62e81fe4dc4de465195c30af123e8e7fb695ded09ecdb6bffdbf696e5764d3c4faa8a7ee3fd43cf80897f83de04e23e2aaad0b97ce4a0bf34696
+  checksum: 8/16c2e138c6e0a3e44d2ed515c2adcf02cf13273274df3e6ccbabcb4c1a54fd6a9ecca5a5babc5c2930c9c3480e5462d51e96a67344e84ba202507403c69cc7b3
   languageName: node
   linkType: hard
 
-"rc-util@npm:^5.27.0":
-  version: 5.39.1
-  resolution: "rc-util@npm:5.39.1"
+"rc-util@npm:^5.36.0":
+  version: 5.39.3
+  resolution: "rc-util@npm:5.39.3"
   dependencies:
-    "@babel/runtime": "npm:^7.18.3"
-    react-is: "npm:^18.2.0"
+    "@babel/runtime": ^7.18.3
+    react-is: ^18.2.0
   peerDependencies:
     react: ">=16.9.0"
     react-dom: ">=16.9.0"
-  checksum: 95fac4642664a49dc334ebafbdea9ec73e12cefadca2247a001d3f54d18ab91bb9381d0035dc55dbfcc67dbbb5de26c420a20c03d650da6065645c54d73b6c83
+  checksum: 8/344e3a0fe984b1352154fb23f3db7649b68c07dc330213b9c2499ade7e4b7cca9ca336638a5a38fba54d7c86e4e55c56aa54d0b76c7e60c5e4f6841fb6e1e689
   languageName: node
   linkType: hard
 
@@ -12908,7 +12908,7 @@ __metadata:
     leaflet: ^1.9.4
     leaflet-defaulticon-compatibility: ^0.1.2
     prop-types: ^15.8.1
-    rc-slider: ^10.5.0
+    rc-slider: ^10.6.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-leaflet: ^4.2.1
