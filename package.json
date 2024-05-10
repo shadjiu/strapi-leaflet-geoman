@@ -68,7 +68,7 @@
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "prop-types": "^15.8.1",
-    "rc-slider": "^10.5.0",
+    "rc-slider": "^10.6.1",
     "react-leaflet": "^4.2.1",
     "react-leaflet-geoman-v2": "^1.0.1",
     "react-sortablejs": "^6.1.4",
