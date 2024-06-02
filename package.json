@@ -63,7 +63,7 @@
     "@strapi/design-system": "^1.17.0",
     "@strapi/helper-plugin": "^4.23.1",
     "@strapi/icons": "^1.17.0",
-    "@uiw/react-color-chrome": "^2.1.1",
+    "@uiw/react-color-chrome": "^2.2.0",
     "geojson-validation": "^1.0.2",
     "leaflet": "^1.9.4",
     "leaflet-defaulticon-compatibility": "^0.1.2",
