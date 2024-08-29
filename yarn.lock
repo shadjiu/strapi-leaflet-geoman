@@ -2590,11 +2590,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@strapi/helper-plugin@npm:^4.23.1":
-  version: 4.24.2
-  resolution: "@strapi/helper-plugin@npm:4.24.2"
+"@strapi/helper-plugin@npm:^4.25.9":
+  version: 4.25.9
+  resolution: "@strapi/helper-plugin@npm:4.25.9"
   dependencies:
-    axios: 1.6.0
+    axios: 1.7.4
     date-fns: 2.30.0
     formik: 2.4.0
     immer: 9.0.19
@@ -2605,13 +2605,13 @@ __metadata:
     react-query: 3.39.3
     react-select: 5.7.0
   peerDependencies:
-    "@strapi/design-system": 1.18.0
-    "@strapi/icons": 1.18.0
+    "@strapi/design-system": 1.19.0
+    "@strapi/icons": 1.19.0
     react: ^17.0.0 || ^18.0.0
     react-dom: ^17.0.0 || ^18.0.0
     react-router-dom: ^5.2.0
     styled-components: ^5.2.1
-  checksum: 9db632a7a16fba05cb758ea63173302f3a52b1459fa114aeed57f482ca46cafa44868aedf4dde1c047d8e051bb23a80764911ec7ee53f7a3888b670c45546c97
+  checksum: edeb7d3e9bd8458b216b53bdbf19451f186f236022d6ff7a322c432e928b809453119a76fb7753f559edc506e8aa2c9989597f3ca1fd07efe672aabbedc4dda1
   languageName: node
   linkType: hard
 
@@ -4500,6 +4500,17 @@ __metadata:
     form-data: "npm:^4.0.0"
     proxy-from-env: "npm:^1.1.0"
   checksum: 10c0/2879e17b96cbca7e2096d231a44e2d0f03e657d79f8928ea38ec5fbaf5a5b7bf952d580cdb58a66ba328c26eb3528b89d5a32da57cc5cf89813786c044f7e9d6
+  languageName: node
+  linkType: hard
+
+"axios@npm:1.7.4":
+  version: 1.7.4
+  resolution: "axios@npm:1.7.4"
+  dependencies:
+    follow-redirects: ^1.15.6
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 0c17039a9acfe6a566fca8431ba5c1b455c83d30ea6157fec68a6722878fcd30f3bd32d172f6bee0c51fe75ca98e6414ddcd968a87b5606b573731629440bfaf
   languageName: node
   linkType: hard
 
@@ -12900,7 +12911,7 @@ __metadata:
   dependencies:
     "@geoman-io/leaflet-geoman-free": ^2.17.0
     "@strapi/design-system": ^1.17.0
-    "@strapi/helper-plugin": ^4.23.1
+    "@strapi/helper-plugin": ^4.25.9
     "@strapi/icons": ^1.17.0
     "@strapi/strapi": ^4.20.5
     "@strapi/typescript-utils": ^4.20.5
