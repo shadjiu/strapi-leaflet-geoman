@@ -1,13 +1,19 @@
-const isValidConfig = (config: any) => {
-  if (
-    typeof config.longitute === "number" &&
-    typeof config.latitude === "number" &&
-    typeof config.zoom === "number"
-  ) {
-    return true;
-  }
+const validateConfig = (config: any) => {
+  const latitude = parseFloat(config.latitude);
+  const longitude = parseFloat(config.longitude);
+  const zoom = parseInt(config.zoom);
+  const tileUrl = config.tileUrl?.trim?.();
+  const tileAttribution = config.tileAttribution?.trim?.();
+  const tileAccessToken = config.tileAccessToken?.trim?.();
 
-  return false;
+  return {
+    latitude: !isNaN(latitude) ? latitude : undefined,
+    longitude: !isNaN(longitude) ? longitude : undefined,
+    zoom: !isNaN(zoom) ? zoom : undefined,
+    tileUrl,
+    tileAttribution,
+    tileAccessToken,
+  };
 };
 
-export default isValidConfig;
+export default validateConfig;

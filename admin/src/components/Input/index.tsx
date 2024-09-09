@@ -10,8 +10,8 @@ import { ColorResult, FileType } from "../../../../types";
 import _, { isEqual } from "lodash";
 import MapItems from "../MapItems";
 import useConfig from "../../hooks/useConfig";
-import isValidConfig from "../../utils/validate-config";
 import ModalWrapper from "../ModalWrapper";
+import validateConfig from "../../utils/validate-config";
 
 const Input = (props: any) => {
   const config = useConfig();
@@ -43,47 +43,40 @@ const Input = (props: any) => {
     optionsTileAccessToken,
   } = props.attribute;
 
-  const individualConfig = {
+  const individualConfig = validateConfig({
     latitude: optionsLatitude,
     longitude: optionsLongitude,
     zoom: optionsZoom,
     tileUrl: optionsTileURL,
     tileAttribution: optionsTileAttribution,
     tileAccessToken: optionsTileAccessToken,
+  });
+
+  const globalConfig = validateConfig(
+    config
+      ? {
+          latitude: config.defaultLatitude,
+          longitude: config.defaultLongitude,
+          zoom: config.defaultZoom,
+          tileUrl: config.defaultTileURL,
+          tileAttribution: config.defaultTileAttribution,
+          tileAccessToken: config.defaultTileAccessToken,
+        }
+      : {}
+  );
+
+  const mapProps = {
+    zoom: individualConfig.zoom ?? globalConfig.zoom ?? 1,
+    center: [
+      individualConfig.latitude ?? globalConfig.latitude ?? 0,
+      individualConfig.longitude ?? globalConfig.longitude ?? 0,
+    ] as [number, number],
+    tileUrl: individualConfig.tileUrl ?? globalConfig.tileUrl ?? "",
+    tileAttribution:
+      individualConfig.tileAttribution ?? globalConfig.tileAttribution ?? "",
+    tileAccessToken:
+      individualConfig.tileAccessToken ?? globalConfig.tileAccessToken ?? "",
   };
-
-  const globalConfig = config
-    ? {
-        latitude: config.defaultLatitude,
-        longitude: config.defaultLongitude,
-        zoom: config.defaultZoom,
-        tileUrl: config.defaultTileURL,
-        tileAttribution: config.defaultTileAttribution,
-        tileAccessToken: config.defaultTileAccessToken,
-      }
-    : {};
-
-  const mapProps = isValidConfig(individualConfig)
-    ? {
-        zoom: individualConfig.zoom,
-        center: [individualConfig.latitude, individualConfig.longitude] as [
-          number,
-          number
-        ],
-        tileUrl: individualConfig.tileUrl,
-        tileAttribution: individualConfig.tileAttribution,
-        tileAccessToken: individualConfig.tileAccessToken,
-      }
-    : {
-        zoom: globalConfig.zoom,
-        center: [globalConfig.latitude, globalConfig.longitude] as [
-          number,
-          number
-        ],
-        tileUrl: globalConfig.tileUrl,
-        tileAttribution: globalConfig.tileAttribution,
-        tileAccessToken: globalConfig.tileAccessToken,
-      };
 
   const handleFeaturesChange = (features: FeatureCollection) => {
     setGeojson(features);
