@@ -72,7 +72,7 @@
     "react-leaflet": "^4.2.1",
     "react-leaflet-geoman-v2": "^1.0.1",
     "react-sortablejs": "^6.1.4",
-    "sortablejs": "^1.15.2"
+    "sortablejs": "^1.15.6"
   },
   "devDependencies": {
     "@strapi/strapi": "^4.20.5",
